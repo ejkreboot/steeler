@@ -11,19 +11,25 @@ ui <- fluidPage(
   ),
   div(
   class = "container",
-  titlePanel("Steel Member Calculator"),
+  titlePanel("AISC Steel Member Calculator"),
   
   sidebarLayout(
     sidebarPanel(
       helpText(
-        "Find section properties at:",
+        "Find AISC standards ",
         a(
-          "calcs.app steel section properties",
-          href = "https://calcs.app/steel/section-properties",
+          "here",
+          href = "https://www.aisc.org/globalassets/product-files-not-searched/publications/standards/a360-22w.pdf",
           target = "_blank"
-        )
+        ),
+        ". Find AISC structural steel shape dimensions database ",
+        a(
+          "here",
+          href = "https://www.aisc.org/publications/steel-construction-manual-resources/16th-ed-steel-construction-manual/aisc-shapes-database-v16.0/",
+            target = "_blank"
+        ), 
+        "."
       ),
-      
       selectInput("type", "Section Type:", choices = unique(shapes$Type)),
       selectInput("name", "Shape:", choices = NULL),
       numericInput("L", "Span / Unbraced Length L (in):", value = NA),
