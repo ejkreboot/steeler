@@ -1,0 +1,12 @@
+name: steeler
+title: steeler
+username: ejkreboot
+account: ejkreboot
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15035969
+bundleId: 10569632
+url: https://ejkreboot.shinyapps.io/steeler/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -7,12 +7,18 @@ shapes <- jsonlite::read_json("steel_specs.json", simplifyVector = TRUE)
 
 ui <- fluidPage(
   tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
+    tags$link(rel = "shortcut icon", href = "favicon.ico")
   ),
   div(
   class = "container",
-  titlePanel("AISC Steel Member Calculator"),
-  
+  titlePanel(
+    div(
+      style = "display: flex; align-items: center;",
+      img(src = "logo_transparent@0.5x.png", height = "100px", style = "margin-right: 10px;"),
+      span("AISC Steel Member Calculator")
+    )
+  ),
   sidebarLayout(
     sidebarPanel(
       helpText(
