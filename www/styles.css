@@ -1,0 +1,82 @@
+.result-section {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+}
+
+.result-item {
+  margin-bottom: 0.75em;
+}
+
+.result-label {
+  font-weight: bold;
+}
+
+.result-value {
+  margin-left: 0.25em;
+}
+
+.result-note {
+  color: #999;
+  font-size: 0.9em;
+  margin-left: 1.25em;
+  margin-top: 0.3em;
+  font-style: italic;
+}
+
+.result-warning {
+  color: #e6432e;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.result-note-formula {
+  color: #008ee6;
+  margin-left: 1.25em;
+  margin-top: 3px;
+  font-style: normal;
+  font-size: 0.9em;
+  font-family: 'Georgia', serif;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffae00;
+}
+
+#shape_properties {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1em;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+#shape_properties td:first-child {
+  font-weight: bold;
+  width: 150px;
+  color: #333;
+}
+
+#shape_properties td:nth-child(2) {
+  width: 150px;
+}
+
+#shape_properties tr:nth-child(even) {
+  background-color: #f9f9ff; /* subtle blue */
+}
+
+#shape_properties tr:nth-child(odd) {
+  background-color: #fffaf5; /* subtle orange tint */
+}
+
+#shape_properties th {
+  background-color: #eee;
+}
+
+
+
+
+
